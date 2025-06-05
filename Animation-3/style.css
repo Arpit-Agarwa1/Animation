@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+  position: relative;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: relative;
+  animation: move 2s linear;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+
+    left: 0px;
+  }
+  25% {
+    left: 16%;
+
+    top: 72vh;
+  }
+  50% {
+    top: 0px;
+    left: 33%;
+  }
+  75% {
+    top: 72vh;
+    left: 51%;
+  }
+  100% {
+    top: 0px;
+    left: 85%;
+  }
+}
